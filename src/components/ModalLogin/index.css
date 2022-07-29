@@ -1,0 +1,45 @@
+.Modal-login {
+  position: absolute;
+  top: 30%;
+  left: calc(50% - 180px);
+  width:300px;
+  height: 180px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.91);
+  color: rgb(32, 32, 32);
+  cursor: pointer;
+  z-index: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+align-items: center;
+  gap:20px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Modal-login_overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url("../../backgr.png");
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+
+.Button--Login {color:ghostwhite;
+border-radius: 100px;
+height: 30px;
+width: 80px;
+border: none;}
+
+.login-input {
+  padding: 10px 20px;
+  height: 10px;
+  width: 130px;
+  border-radius: 30px;
+  border-color: ghostwhite;}

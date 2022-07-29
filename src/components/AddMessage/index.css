@@ -1,0 +1,24 @@
+.AddMessage {
+  margin-bottom: 40px;
+  padding: 6px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+ 
+}
+
+.AddMessage input {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border-color: ghostwhite;
+  
+}
+
+.AddMessage input:focus {outline: none;
+	border-color: white;
+	background-color: rgba(244, 231, 173, 0.453);
+  color:white;
+  }
+
+  .AddMessage input::placeholder {color:rgb(82, 82, 82);
+    padding-left:10px;}

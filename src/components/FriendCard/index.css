@@ -1,0 +1,38 @@
+.FriendCard {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+  color: rgb(32, 97, 111);
+  cursor: pointer;
+  transition: all .35s;
+  border-radius: 8px;
+  background-color: rgba(248, 248, 255, 0.395);
+}
+
+.FriendCard:hover {
+  background: orange;
+  color:white;
+}
+
+.FriendCard__photo {
+  width: 75px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.FriendCard__name {
+  padding: 4px 14px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  width: 100%;
+  
+}
+
+.delete-friend { border-radius: 100px;
+  border: none;
+  background-color: transparent;
+  color:gray;
+}
+.delete-friend:hover {color:rgb(255, 255, 255);}

@@ -1,0 +1,36 @@
+.App {
+  color: rgb(24, 24, 24);
+  display: flex;
+  font-size: 0.9rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background: rgb(253, 152, 0);
+background: linear-gradient(180deg, rgb(220, 220, 220) 0%, rgb(247, 193, 75) 100%);
+
+}
+.main__Content {display: flex;
+flex-direction: row;
+justify-content: center;
+gap:200px;}
+.App__friends, .App_messages {
+  color: #424242;
+  padding: 20px;
+  width: 400px;
+margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.App__friends {width: 300px;
+  align-items: flex-start;}
+  .App__friends h3 {margin-left: 30px;}
+
+
+@media (max-width: 767px) {
+  .App {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
