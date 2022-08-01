@@ -2,7 +2,7 @@
   position: absolute;
   top: 30%;
   left: calc(50% - 180px);
-  width:300px;
+  width:320px;
   height: 180px;
   background-color: white;
   border-radius: 6px;
@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
 align-items: center;
-  gap:20px;
+  gap: 10px;
  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -30,12 +30,15 @@ align-items: center;
   height: 100vh;
   z-index: 2;
 }
-
+.modal-text-login {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:rgb(45, 45, 45);
+margin:0%;}
 .Button--Login {color:ghostwhite;
 border-radius: 100px;
 height: 30px;
 width: 80px;
-border: none;}
+border: none;
+font-weight: bold;}
+.Button--Login:hover {transform: scale(1.1);}
 
 .login-input {
   padding: 10px 20px;
@@ -43,3 +46,16 @@ border: none;}
   width: 130px;
   border-radius: 30px;
   border-color: ghostwhite;}
+
+  .logoModal {width: 150px;}
+
+  .login-form {display: flex;
+  flex-direction: row;
+gap:5px;}
+
+.anteprima-utente {background-color: rgba(232, 230, 230, 0.393);
+border-radius: 100px;
+padding:5px;
+}
+
+.userP {width: 50px;}

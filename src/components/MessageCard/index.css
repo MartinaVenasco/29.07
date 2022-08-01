@@ -1,9 +1,10 @@
 .MessageCard {
+  width: 350px;
   position: relative;
   padding: 6px 20px;
   border-radius: 6px;
   box-shadow: 0 0 2px rgba(24, 24, 24, 0.45);
-  background-color: rgba(248, 248, 255, 0.412);
+  background-color: rgba(248, 248, 255, 0.753);
 }
 
 .MessageCard__text{

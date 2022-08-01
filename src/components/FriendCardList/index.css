@@ -7,3 +7,18 @@
   align-items: center;
   gap: 20px;
 }
+
+.FriendCardList__content {  display: flex;
+  flex-direction: column;
+  height: 220px;
+  width: 100px;
+  gap: 20px;
+  width: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scroll-padding: 10px 0 0 10px;}
+  
+ .FriendCard { cursor: pointer;
+  scroll-snap-align: start;
+}

@@ -1,5 +1,5 @@
 .Navbar {
-	
+	background-color: whitesmoke;
 	height: 70px;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 	display: flex;
@@ -45,3 +45,36 @@ input:focus {outline: none;
 	background-color: rgba(244, 231, 173, 0.453);
   }
 .Button__clear--filter {width: 50px;}
+@media (max-width: 767px) {
+	.Navbar {
+		background-color: whitesmoke;
+		height: 70px;
+		width: 100vw;
+		box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	  }
+
+	  .logo {width: 150px;
+		margin-right: 50px;
+		padding:5px;
+	padding-top: 80px;}
+	.Navbar__list {
+		display: flex;
+		gap: 20px;
+		justify-content: flex-end;
+		padding-right: 20px;
+		list-style-type: none;
+	  }
+	  .filterInput {height: 20px;
+		margin-top: 10px;
+		background-color: rgb(235, 236, 237);
+		border-color: white;
+		border-radius: 30px;
+		color:white;
+		width: 300px;
+		align-self: flex-end;
+		margin-left: 200px;
+		margin-top: 30px;}
+}
