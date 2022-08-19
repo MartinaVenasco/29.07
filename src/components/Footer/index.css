@@ -1,0 +1,12 @@
+.footer { background-color: rgb(255, 177, 8);
+padding:8px;
+display: flex;
+color:rgb(254, 254, 254);
+border-top-left-radius:30px;
+border-top-right-radius: 30px;
+justify-content: center;
+position: relative;
+}
+
+
+

@@ -3,7 +3,7 @@ import { DELETE } from '../../utils/api';
 import Modal from '../Modal';
 import './index.css';
 
-const MessageCard = ({textContent, isRenderedList, onDeleteBtn }) => {
+const MessageCard = ({textContent, isRenderedList, onDeleteBtn, myRef }) => {
   const [isModalVisibile, setModalVisibility] = useState(false);
 
   const onModalConfirm = () => {
@@ -12,7 +12,7 @@ const MessageCard = ({textContent, isRenderedList, onDeleteBtn }) => {
   }
 
   return (
-    <div className="MessageCard">
+    <div className="MessageCard" ref={myRef}>
       <button onClick={() => setModalVisibility(true)} className="MessageCard__delete">X</button>
       <p className="MessageCard__text">
         { textContent.text }

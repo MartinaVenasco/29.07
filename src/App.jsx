@@ -5,6 +5,7 @@ import FriendCardList from "./components/FriendCardList";
 import MessageCardList from "./components/MessageCardList";
 import NavBar from "./components/Navbar";
 import ModalLogin from "./components/ModalLogin/ModalLogin";
+import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 function App() {
@@ -30,14 +31,14 @@ function App() {
           <NavBar onLogOutClick={setLogin} />
           <input
             className="filterInput"
-            placeholder="cerca messaggi di..."
+            placeholder="find message by sender..."
             onChange={(event) => {
               setFilteredList(event.target.value);
             }}
           ></input>
           <div className="main__Content">
             <div className="App__friends">
-              <h3>Lista degli amici</h3>{" "}
+              <h3>My friend list</h3>{" "}
               <AddFriend friendList={friendList} onAddFriend={setFriendList} />
               <FriendCardList
                 friendList={friendList}
@@ -45,7 +46,7 @@ function App() {
               />
             </div>
             <div className="App_messages">
-              <h3>Messaggi</h3>
+              <h3>Messagges</h3>
               <AddMessage
                 isRenderedList={isRenderedList}
                 onAddButton={setRenderedList}
@@ -57,7 +58,10 @@ function App() {
                 filteredList={filteredList}
               />
             </div>
+            
           </div>
+
+          <Footer/>
         </>
       )}
     </div>

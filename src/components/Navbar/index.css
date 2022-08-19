@@ -23,7 +23,7 @@
   }
   
   .Navbar__list a:hover {
-	color: rgb(248, 224, 135);
+	color: rgb(255, 202, 9);
   }
   .logo {width: 350px;
 margin-right: 50px;
@@ -36,7 +36,7 @@ border-radius: 30px;
 color:white;
 width: 300px;
 align-self: flex-end;
-margin-right: 200px;
+margin-right: 300px;
 margin-top: 30px;}
 .filterInput::placeholder {color:rgb(176, 176, 176);
 padding-left:10px;}
@@ -45,6 +45,7 @@ input:focus {outline: none;
 	background-color: rgba(244, 231, 173, 0.453);
   }
 .Button__clear--filter {width: 50px;}
+.logout {margin-left: 55px;}
 @media (max-width: 767px) {
 	.Navbar {
 		background-color: whitesmoke;
@@ -77,4 +78,6 @@ input:focus {outline: none;
 		align-self: flex-end;
 		margin-left: 200px;
 		margin-top: 30px;}
+	
 }
+

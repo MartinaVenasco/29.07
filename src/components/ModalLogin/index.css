@@ -3,7 +3,7 @@
   top: 30%;
   left: calc(50% - 180px);
   width:320px;
-  height: 180px;
+  height: 250px;
   background-color: white;
   border-radius: 6px;
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.91);
@@ -37,7 +37,8 @@ border-radius: 100px;
 height: 30px;
 width: 80px;
 border: none;
-font-weight: bold;}
+font-weight: bold;
+align-self: center;}
 .Button--Login:hover {transform: scale(1.1);}
 
 .login-input {
@@ -50,12 +51,9 @@ font-weight: bold;}
   .logoModal {width: 150px;}
 
   .login-form {display: flex;
-  flex-direction: row;
-gap:5px;}
+  flex-direction: column;
+gap:10px;}
 
-.anteprima-utente {background-color: rgba(232, 230, 230, 0.393);
-border-radius: 100px;
-padding:5px;
-}
+
 
 .userP {width: 50px;}

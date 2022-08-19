@@ -1,11 +1,14 @@
 import { useState } from "react";
 import { POST } from "../../utils/api.js";
+ 
 
 import Button from "../Button";
 import "./index.css";
 
 const AddMessage = ({ isRenderedList, onAddButton }) => {
   const [messageText, setMessageText] = useState("");
+
+
   const NewTime = () => {
     const hour = new Date().getHours();
     const minutes = new Date().getMinutes();
@@ -32,12 +35,13 @@ const AddMessage = ({ isRenderedList, onAddButton }) => {
       <input
         className="AddMessage__text"
         type="text"
-        placeholder="Scrivi il messaggio..."
+        placeholder="Type your message..."
         value={messageText}
+    
         onChange={(e) => setMessageText(e.target.value)}
         required
       />
-      <Button type="submit" btnTextContent="Invia" color="lightseagreen" />
+      <Button type="submit" btnTextContent="Invia" color="lightseagreen" className="addmessage" />
     </form>
   );
 };
