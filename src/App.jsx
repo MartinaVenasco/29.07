@@ -5,6 +5,7 @@ import FriendCardList from "./components/FriendCardList";
 import MessageCardList from "./components/MessageCardList";
 import NavBar from "./components/Navbar";
 import ModalLogin from "./components/ModalLogin/ModalLogin";
+import Mycontacts from './components/Mycontacts';
 import Footer from "./components/Footer/Footer";
 import "./App.css";
 
@@ -60,7 +61,7 @@ function App() {
             </div>
             
           </div>
-
+<Mycontacts/>
           <Footer/>
         </>
       )}

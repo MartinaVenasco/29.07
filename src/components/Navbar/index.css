@@ -5,6 +5,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	position: relative;
   }
   
   .Navbar__list {
@@ -27,7 +28,7 @@
   }
   .logo {width: 350px;
 margin-right: 50px;
-padding:5px;}
+padding:5px;align-self: center;}
 .filterInput {height: 20px;
 margin-top: 10px;
 background-color: rgb(235, 236, 237);
@@ -46,6 +47,52 @@ input:focus {outline: none;
   }
 .Button__clear--filter {width: 50px;}
 .logout {margin-left: 55px;}
+
+.NavBar_hamb button {
+	position: fixed;
+	left: 40px;
+	top: 40px;
+	z-index: 10;
+	cursor: pointer;
+	background: transparent;
+  border: none;
+  }
+  
+  .menuNav {
+	overflow-y: scroll;
+	list-style: none;
+	position: fixed;
+	
+	top: -40px;
+	background: darkcyan;
+	left: -40px;
+	bottom: 0;
+	height: 100vh;
+	width: 0;
+	overflow: hidden;
+	max-width: 190px;
+	right: -900px;
+	z-index: 2;
+
+  }
+  
+  .menuNav.showMenu {
+	width: 100%;
+  }
+  
+  a {
+	display: block;
+	padding: 10px 40px;
+	text-decoration: none;
+	color: #3fffd2;
+	text-transform: uppercase;
+	font-weight: bold;
+  }
+  
+  .menuNav li:first-child {
+	margin-top: 7rem;
+  }
+
 @media (max-width: 767px) {
 	.Navbar {
 		background-color: whitesmoke;

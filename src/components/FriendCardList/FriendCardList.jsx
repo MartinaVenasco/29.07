@@ -20,9 +20,6 @@ const FriendCardList = () => {
           ? friendList.map(friend => <FriendCard friendData={friend}  deleteBtnFr={() =>
                 DELETE('friends', friend.id).then(() => setFriendList(!friendList))
               } friendList={friendList} key={friend.id}
-              
-
-                
               />)
           : <p>Loading...</p>
       }</div>
