@@ -5,7 +5,7 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
-  background-color:rgb(185, 204, 205);
+  background-color: rgb(185, 204, 205);
 }
 
 .main__Content {
@@ -18,11 +18,11 @@
 .App__friends,
 .App_messages {
   color: #424242;
-  padding: 20px;
+
   width: 400px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .addmessage {
@@ -33,8 +33,7 @@
   color: rgb(248, 248, 248);
   border-radius: 20px;
   cursor: pointer;
-  transition: all .35s;
-  
+  transition: all 0.35s;
 }
 
 .App__friends {
@@ -43,22 +42,30 @@
 }
 
 .App__friends h3 {
-  margin-left: 30px;
+  margin-left: -50px;
 }
 
 @media (max-width: 767px) {
+  .Navbar {
+    margin-top: 30px;
+  }
+
   .App {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
+  .logo {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
   .main__Content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 15px;
   }
+
   .FriendCard {
     scroll-snap-align: start;
     padding: 0;
@@ -67,11 +74,17 @@
     padding: 6px 20px;
     display: flex;
     flex-direction: column;
-  
     justify-content: flex-start;
     gap: 10px;
   }
-.filterInput {width: 150px;margin-left: 5px;}
+  .AddFriend input {
+    width: 260px;
+  }
+
+  .filterInput {
+    width: 150px;
+    margin-right: 190px;
+  }
   .AddMessage {
     margin-bottom: 40px;
     padding: 6px 20px;
@@ -87,10 +100,11 @@
     color: rgb(248, 248, 248);
     border-radius: 20px;
     cursor: pointer;
-    transition: all .35s;
+    transition: all 0.35s;
     align-self: flex-end;
+    margin-left: 15px;
   }
-  
+
   .addmessage:hover {
     filter: saturate(0.6);
   }
@@ -108,7 +122,6 @@
     height: 220px;
   }
 
-
   .FriendCard__name {
     font-size: 0.8rem;
     font-weight: bold;
@@ -116,26 +129,40 @@
 
   .MessageCard {
     width: 300px;
+    margin-left: 15px;
   }
-
+  .MessageCardList {
+    margin-bottom: 30px;
+  }
   .App_messages {
-    margin: 0;
-
+    margin-left: 30px;
   }
-.AddMessage__text{height: 90px;}
+  .App_messages h3 {
+    margin-left: 30px;
+  }
+  .AddMessage__text {
+    height: 90px;
+    width: 280px;
+  }
   .App__friends {
-    margin: 10px;
+    margin-left: 100px;
   }
-  .FriendCard {width: 320px;
+  .App__friends h3 {margin-left: -40px;}
+  .FriendCard {
+    width: 320px;
   }
-  .delete-friend {padding:30px;}
+  .delete-friend {
+    padding: 30px;
+  }
 
-  .footer {width: 100vw;}
+  .footer {
+    width: 100vw;
+  }
   .Modal-login {
     position: absolute;
     top: 30%;
     left: calc(50% - 180px);
-    width:300px;
+    width: 300px;
     height: 250px;
     background-color: white;
     border-radius: 6px;
@@ -146,8 +173,9 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
-  align-items: center;
+    align-items: center;
     gap: 10px;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
   }
 }

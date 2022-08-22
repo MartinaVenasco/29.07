@@ -1,5 +1,5 @@
 .MessageCard {
-  width: 350px;
+  width: 380px;
   position: relative;
   padding: 6px 20px;
   border-radius: 6px;
@@ -35,9 +35,10 @@
 }
 
 .MessageCard__delete:hover {
-  transform: scale(1.4) rotate(359deg);
+  transform: scale(1.5);
+  color:rgb(0, 255, 187);
 }
 
 .MessageCard__delete:active {
-  color: lightseagreen;
+  color: rgb(0, 255, 179);
 }

@@ -12,13 +12,14 @@ const Modal = ({modalTextContent, onModalConfirm, setModalVisibility}) => {
   }
 
   return (
+    <div className="modal_overlay_delete">
     <div className="Modal">
       <p>{ modalTextContent }</p>
       <div className="Modal__btns">
         <Button onHandleClick={onCancelBtn} btnTextContent="Annulla" color="lightcoral" type="button" />
         <Button onHandleClick={onConfirmBtn} btnTextContent="Conferma" color="lightseagreen" type="button" />
       </div>
-    </div>
+    </div></div>
   )
 }
 

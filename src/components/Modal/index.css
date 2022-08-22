@@ -1,6 +1,7 @@
 .Modal {
   position: fixed;
-  top: calc(50% - 50px);
+  top: calc(50% - 80px);
+  left: calc(50% - 100px);
   height: 100px;
   padding: 20px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
@@ -13,3 +14,11 @@
   display: flex;
   gap: 10px;
 }
+.modal_overlay_delete {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: rgba(12, 21, 20, 0.819);}

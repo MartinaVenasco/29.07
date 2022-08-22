@@ -7,7 +7,12 @@ import { useState } from "react";
 import { MdClose } from "react-icons/md"
 import { FiMenu } from "react-icons/fi"
 
+
+
+
 const Navbar = ({ onLogOutClick }) => {
+
+
   const UserN = localStorage.getItem("username");
   const [navbarOpen, setNavbarOpen] = useState(false);
   const handleToggle = () => {
@@ -22,6 +27,7 @@ const Navbar = ({ onLogOutClick }) => {
     );
     onLogOutClick(true);
   };
+  
   return (
     <IconContext.Provider
       value={{
@@ -55,10 +61,11 @@ const Navbar = ({ onLogOutClick }) => {
         <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
           <li onClick={() => closeMenu()}>
             {" "}
-            <a href="/">ABOUT</a> <a href="/">MyFriends</a>
+            <a  className="list_menu_hamb" href="/">ABOUT</a> <a  className="list_menu_hamb" href="/">MyFriends</a>
           </li>{" "}
         </ul>
       </nav>
+   
     </IconContext.Provider>
   );
 };

@@ -1,5 +1,6 @@
 const BASE_URL = 'https://edgemony-backend.herokuapp.com/';
-const API_Cont = 'https://jsonplaceholder.typicode.com/'
+const API_Cont = 'https://jsonplaceholder.typicode.com/';
+
 const GET = async (path) => {
   const res = await fetch(BASE_URL + path);
 

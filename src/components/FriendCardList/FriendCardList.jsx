@@ -8,7 +8,7 @@ const FriendCardList = () => {
 
   useEffect(() => {
     GET('friends').then(data => setFriendList(data));
-  }, [friendList]);
+  }, []);
 
   
 

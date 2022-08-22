@@ -13,7 +13,7 @@ const MessageCardList = ({ isRenderedList, setRenderedList, filteredList }) => {
       .then((data) => setMessageList(data))
       .then(() => {
         window.scroll({
-          top: lastMessage.current.offsetTop,
+          top: lastMessage.current,
           behavior: "smooth",
         });
       });
